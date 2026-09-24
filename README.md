@@ -22,7 +22,7 @@ To understand how a password-protected PDF can be tested against a dictionary of
 
 | Practical | Topic | Status |
 |---|---|---|
-| PM1 | PDF Password Cracking with John the Ripper | 🟡 In Progress |
+| PM1 | PDF Password Cracking with John the Ripper | ✅ Completed |
 | PM2 | Networkwalks Password Cracker | 🟡 In Progress |
 
 ### ⚠️ Ethical Use

@@ -83,16 +83,31 @@ The result was verified both from the John CLI output and the Johnny GUI.
 
 ## 📸 Evidence
 
-The following screenshots are the actual evidence from my Kali Linux practical:
+The following screenshots are the actual evidence from my Kali Linux practical.
 
-1. Lab files and PDF
-2. PDF hash extraction using `pdf2john`
-3. RockYou wordlist available
-4. John dictionary attack successfully completed
-5. Recovered password using `john --show`
-6. Johnny GUI showing the cracked result
+### 1. Lab files and PDF
 
-> I will add the screenshots to the `evidence/` folder manually.
+![Lab files and PDF](./01-lab-files-and-pdf.jpg)
+
+### 2. PDF hash extraction
+
+![PDF hash extraction](./02-pdf-hash-extraction.jpg)
+
+### 3. RockYou wordlist ready
+
+![RockYou wordlist ready](./03-rockyou-wordlist-ready.jpg)
+
+### 4. John dictionary attack success
+
+![John dictionary attack success](./04-john-dictionary-attack-success.jpg)
+
+### 5. Recovered password
+
+![Recovered password](./05-recovered-password-john-show.jpg)
+
+### 6. Johnny GUI cracked result
+
+![Johnny GUI cracked result](./06-johnny-gui-cracked.jpg)
 
 ## 🧠 Learning Outcomes
 

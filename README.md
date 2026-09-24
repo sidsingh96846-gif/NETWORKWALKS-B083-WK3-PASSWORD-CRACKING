@@ -42,8 +42,9 @@ NETWORKWALKS-B083-WK3-PASSWORD-CRACKING/
 │
 └── W3-PM2-Networkwalks-Password-Cracker/
     ├── README.md
-    └── evidence/
-        └── README.md
+    ├── 01-pdf3-hash-calculation.png
+    ├── 02-pdf3-password-cracked.png
+    └── 03-pdf3-flag-captured.png
 ```
 
 ## 📌 Practical Status

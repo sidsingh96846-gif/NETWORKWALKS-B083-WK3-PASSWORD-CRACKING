@@ -1,10 +1,14 @@
-# PM1 Evidence
+# 📸 PM1 Evidence
 
-This folder contains screenshots from my authorized Kali Linux practical.
+Add the **actual screenshots from the Kali Linux practical** to this folder using these exact filenames.
 
-The screenshots document:
+| # | Filename | What it shows |
+|---|---|---|
+| 1 | `01-lab-files-and-pdf.jpg` | Lab folder and target PDF |
+| 2 | `02-pdf-hash-extraction.jpg` | `pdf2john` hash extraction |
+| 3 | `03-rockyou-wordlist-ready.jpg` | RockYou wordlist available |
+| 4 | `04-john-dictionary-attack-success.jpg` | John dictionary attack and `good-luck` result |
+| 5 | `05-recovered-password-john-show.jpg` | `john --show` verification |
+| 6 | `06-johnny-gui-cracked.jpg` | Johnny GUI showing 1/1 cracked |
 
-1. PDF hash extraction using pdf2john
-2. John the Ripper dictionary attack
-3. Recovered password using john --show
-4. Johnny GUI result
+**Important:** Only genuine screenshots from the author's practical should be uploaded here. No generated or placeholder screenshots.

@@ -15,7 +15,7 @@ To understand how an authorized password-protected PDF can be tested against a d
 
 ## Lab Workflow
 
-```text
+`text
 Password-Protected PDF
         ↓
      pdf2john
@@ -27,55 +27,55 @@ John the Ripper
 Dictionary Attack
         ↓
  Password Recovery
-```
+`
 
 ## Commands Used
 
 ### 1. Go to the Downloads folder
 
-```bash
+`bash
 cd ~/Downloads
-```
+`
 
 ### 2. Check the files
 
-```bash
+`bash
 ls
-```
+`
 
 ### 3. Extract the PDF hash
 
-```bash
+`bash
 pdf2john "My-Locked-PDF1.pdf" > hash1.txt
-```
+`
 
 ### 4. View the extracted hash
 
-```bash
+`bash
 cat hash1.txt
-```
+`
 
 ### 5. Run John the Ripper
 
-```bash
+`bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt
-```
+`
 
 ### 6. Show the recovered password
 
-```bash
+`bash
 john --show hash1.txt
-```
+`
 
 ### 7. Open Johnny GUI
 
-```bash
+`bash
 johnny
-```
+`
 
 ## Result
 
-The authorized lab PDF was tested successfully using the John the Ripper password-recovery workflow.
+The authorized lab PDF was tested using the John the Ripper password-recovery workflow.
 
 ## Learning Outcomes
 
@@ -87,25 +87,16 @@ The authorized lab PDF was tested successfully using the John the Ripper passwor
 
 ## Evidence
 
-Screenshots from my own Kali Linux practical:
+Evidence screenshots from the author's own Kali Linux practical will be added to this section after the practical is completed.
 
-### 1. PDF hash extraction with pdf2john
+Planned evidence:
 
-![PDF hash extraction](evidence/01-pdf-hash-extraction.png)
+1. PDF hash extraction with pdf2john
+2. John the Ripper dictionary attack
+3. Recovered password with john --show
+4. Johnny GUI result
 
-### 2. John the Ripper dictionary attack
-
-![John dictionary attack](evidence/02-john-dictionary-attack.png)
-
-### 3. Recovered password with john --show
-
-![Recovered password](evidence/03-john-show-password.png)
-
-### 4. Johnny GUI showing the cracked PDF
-
-![Johnny cracked result](evidence/04-johnny-cracked.png)
-
-The screenshots are stored in the repository `evidence/` directory.
+> Screenshots should show only the authorized lab file and relevant terminal/GUI output.
 
 ## Ethical Use
 

@@ -1,107 +1,111 @@
 # 🔐 PM1 — PDF Password Cracking with John the Ripper
 
-## Objective
+## 🎯 Objective
 
-To understand how an authorized password-protected PDF can be tested against a dictionary of candidate passwords using John the Ripper on Kali Linux.
+To test the password of the authorized Networkwalks lab PDF using **John the Ripper** on Kali Linux and understand the basic dictionary-attack workflow.
 
-## Environment
+## 🖥️ Environment
 
-- Operating System: Kali Linux
-- Tool: John the Ripper
-- Hash Extraction Tool: pdf2john
-- GUI: Johnny
-- Attack Type: Dictionary Attack
+- OS: Kali Linux
+- Target: `My Locked PDF1.pdf`
+- Hash extraction: `pdf2john`
+- Cracking tool: John the Ripper
 - Wordlist: RockYou
+- GUI: Johnny
+- Attack type: Dictionary attack
 
-## Lab Workflow
+## 🔄 Workflow
 
-`text
+```text
 Password-Protected PDF
         ↓
      pdf2john
         ↓
-    PDF Hash
+      PDF Hash
         ↓
-John the Ripper
+ John the Ripper
         ↓
-Dictionary Attack
+ Dictionary Attack
         ↓
- Password Recovery
-`
+  Password Recovery
+        ↓
+      Johnny GUI
+```
 
-## Commands Used
+## 💻 Commands Used
 
-### 1. Go to the Downloads folder
+### 1. Locate the lab files
 
-`bash
-cd ~/Downloads
-`
+```bash
+ls /media/sf_network_walks_week_3
+```
 
-### 2. Check the files
+### 2. Extract the PDF hash
 
-`bash
-ls
-`
-
-### 3. Extract the PDF hash
-
-`bash
-pdf2john "My-Locked-PDF1.pdf" > hash1.txt
-`
-
-### 4. View the extracted hash
-
-`bash
+```bash
+pdf2john "/media/sf_network_walks_week_3/My Locked PDF1.pdf" > hash1.txt
 cat hash1.txt
-`
+```
 
-### 5. Run John the Ripper
+### 3. Check the RockYou wordlist
 
-`bash
+```bash
+ls /usr/share/wordlists/rockyou.txt
+```
+
+### 4. Run the dictionary attack
+
+```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt
-`
+```
 
-### 6. Show the recovered password
+### 5. Verify the recovered password
 
-`bash
+```bash
 john --show hash1.txt
-`
+```
 
-### 7. Open Johnny GUI
+### 6. Open Johnny
 
-`bash
+```bash
 johnny
-`
+```
 
-## Result
+## ✅ Result
 
-The authorized lab PDF was tested using the John the Ripper password-recovery workflow.
+The authorized lab PDF password was successfully recovered as:
 
-## Learning Outcomes
+```text
+good-luck
+```
 
-- Extracting a PDF password hash using pdf2john.
-- Performing a dictionary-based password audit with John the Ripper.
-- Using John the Ripper from the command line.
-- Exploring the Johnny graphical interface.
-- Understanding the basic PDF password-auditing workflow.
+The result was verified both from the John CLI output and the Johnny GUI.
 
-## Evidence
+## 📸 Evidence
 
-Evidence screenshots from the author's own Kali Linux practical will be added to this section after the practical is completed.
+The following screenshots are the actual evidence from my Kali Linux practical:
 
-Planned evidence:
+1. Lab files and PDF
+2. PDF hash extraction using `pdf2john`
+3. RockYou wordlist available
+4. John dictionary attack successfully completed
+5. Recovered password using `john --show`
+6. Johnny GUI showing the cracked result
 
-1. PDF hash extraction with pdf2john
-2. John the Ripper dictionary attack
-3. Recovered password with john --show
-4. Johnny GUI result
+> I will add the screenshots to the `evidence/` folder manually.
 
-> Screenshots should show only the authorized lab file and relevant terminal/GUI output.
+## 🧠 Learning Outcomes
 
-## Ethical Use
+- Extracting a crackable PDF hash with `pdf2john`
+- Using a dictionary wordlist with John the Ripper
+- Verifying recovered passwords with `john --show`
+- Using Johnny as a graphical interface for John
+- Understanding why password strength matters
 
-This practical is performed only on an authorized lab PDF for cybersecurity training. Password-cracking techniques must not be used against files or systems without permission.
+## ⚠️ Ethical Use
 
-## Author
+This practical was performed only against the authorized lab PDF supplied for cybersecurity training. These techniques must not be used against files or systems without permission.
+
+## 👨‍💻 Author
 
 **Siddharth Singh**

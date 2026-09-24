@@ -2,62 +2,62 @@
 
 ## 🎯 Objective
 
-To use the Networkwalks **Hash Calculator** and **Password Cracker** tools to understand the password-recovery workflow for the authorized lab PDF.
+To use the Networkwalks **Hash Calculator** and **Password Cracker** tools in an authorized cybersecurity training lab and document the password-recovery workflow.
 
-## 🛠️ Tools
+## 🛠️ Tools Used
 
 - Web browser
 - Networkwalks Hash Calculator
 - Networkwalks Password Cracker
-- Authorized lab file: `My Locked PDF1.pdf`
 
-## 🔄 Lab Workflow
+## 🔄 Practical Workflow
 
 ```text
-Locked PDF
-   ↓
+Password-Protected PDF
+        ↓
 Networkwalks Hash Calculator
-   ↓
-$pdf$... hash
-   ↓
-Copy complete hash
-   ↓
+        ↓
+      $pdf$... hash
+        ↓
 Networkwalks Password Cracker
-   ↓
-Dictionary Attack
-   ↓
-Recovered Password
+        ↓
+  Dictionary Attack
+        ↓
+ Password Recovered
+        ↓
+     Flag Captured
 ```
 
-## 📋 Steps
+## 📋 Practical Steps
 
-### Step 1 — Open Hash Calculator
-
-Open the Networkwalks Hash Calculator in a browser and upload the authorized lab PDF.
-
-### Step 2 — Extract the hash
-
-Select the PDF option and obtain the hash beginning with `$pdf$`.
-
-### Step 3 — Copy the complete hash
-
-Copy the complete hash value without omitting any part.
-
-### Step 4 — Open Password Cracker
-
-Open the Networkwalks Password Cracker and paste the extracted hash.
-
-### Step 5 — Start the attack
-
-Start the dictionary attack and record the result shown by the tool.
+1. Upload the authorized lab PDF to the **Hash Calculator**.
+2. Generate the PDF hash beginning with `$pdf$`.
+3. Copy the complete hash.
+4. Paste the hash into **Password Cracker**.
+5. Run the dictionary attack.
+6. Record the recovered password and capture the final flag when provided by the lab.
 
 ## 📸 Evidence
 
-Actual screenshots from my own PM2 practical will be added to the `evidence/` folder.
+The PM2 practical evidence is stored in this folder:
+
+- `01-pdf3-hash-calculation.png` — PDF3 hash calculation
+- `02-pdf3-password-cracked.png` — PDF3 password-cracking result
+- `03-pdf3-flag-captured.png` — PDF3 flag captured
+
+The screenshots are from the actual practical work and are labeled as **PDF3** to avoid confusing them with the PDF1 assignment reference.
+
+## 📌 Result
+
+- **Practical:** Completed
+- **Evidence:** 3 screenshots
+- **Lab target documented:** PDF3
+- **Recovered password:** `1qaz2wsx`
+- **Captured flag:** `nw{networkwalks_flag_260821_1}`
 
 ## ⚠️ Ethical Use
 
-This practical is for the authorized Networkwalks training lab only. Do not use password-cracking tools against files or systems without explicit permission.
+This practical was performed only in the authorized Networkwalks training environment. Password-cracking techniques must not be used against files, accounts, or systems without explicit permission.
 
 ## 👨‍💻 Author
 

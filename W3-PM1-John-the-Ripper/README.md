@@ -87,7 +87,14 @@ The authorized lab PDF was tested successfully using the John the Ripper passwor
 
 ## Evidence
 
-Screenshots from the practical will be added to the project evidence section.
+Screenshots from my own Kali Linux practical:
+
+1. PDF hash extraction using `pdf2john`.
+2. John the Ripper dictionary attack completed successfully.
+3. `john --show hash1.txt` showing the recovered password.
+4. Johnny GUI showing the PDF entry as cracked (`1:1 cracked`).
+
+The screenshots are organized in the repository `evidence/` directory.
 
 ## Ethical Use
 
